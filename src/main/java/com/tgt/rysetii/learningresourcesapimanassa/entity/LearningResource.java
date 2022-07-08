@@ -86,4 +86,18 @@ public class LearningResource {
         this.retiredDate = retiredDate;
     }
 
+    @Override
+    public String toString() {
+        return "LearningResource{" +
+                "learningResourceId=" + learningResourceId +
+                ", learningResourceName='" + productName + '\'' +
+                ", costPrice=" + costPrice +
+                ", sellingPrice=" + sellingPrice +
+                ", learningResourceStatus=" + learningResourceStatus +
+                ", createdDate=" + createdDate +
+                ", publishedDate=" + publishedDate +
+                ", retiredDate=" + retiredDate +
+                '}';
+    }
+
 }
