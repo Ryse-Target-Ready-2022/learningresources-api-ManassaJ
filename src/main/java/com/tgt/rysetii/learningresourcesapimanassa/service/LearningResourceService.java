@@ -1,6 +1,9 @@
 package com.tgt.rysetii.learningresourcesapimanassa.service;
 import com.tgt.rysetii.learningresourcesapimanassa.entity.LearningResource;
 import com.tgt.rysetii.learningresourcesapimanassa.entity.LearningResourceStatus;
+import com.tgt.rysetii.learningresourcesapimanassa.repository.LearningResourceRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -9,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
-
+@Service
 public class LearningResourceService {
     public void saveLearningResources(List<LearningResource> learningResources){
         populateLearningResourcesToCsv(learningResources);
